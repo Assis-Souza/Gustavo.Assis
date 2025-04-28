@@ -1,0 +1,12 @@
+
+public class exer_while_1Alexmontanha {
+    public static void main(String[] args) throws Exception {
+        int numero = 0; 
+        
+        while ( numero <= 50){
+            System.out.println(numero);
+            numero++;
+     
+        }
+    }
+}
