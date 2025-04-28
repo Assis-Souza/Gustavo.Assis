@@ -1,0 +1,19 @@
+public class exerc_whileAlexMontanha_4 {
+    public static void main(String[] args){
+        int numero_1 =0, numero_2 =1; 
+        int contador = 0; 
+
+        System.out.println("Os primeiros números da sequência de Fibonacci são: ");
+
+        while (contador <10){
+            System.out.print(numero_1);
+
+            int proximo_valor = numero_1 + numero_2;
+            numero_1 = numero_2; 
+            numero_2 = proximo_valor;
+
+            contador ++; 
+            
+        }
+    }
+}
