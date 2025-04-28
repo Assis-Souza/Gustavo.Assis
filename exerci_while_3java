@@ -1,0 +1,25 @@
+public class exerc_whileAlexMontanha_3 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        String senhacorreta = "java"; 
+        String senhainformada; 
+
+        while (true){ 
+            System.out.println("Digite a senha para acessar o sistema: ");
+            senhainformada = scanner.nextLine();
+
+            if (senhainformada.equals(senhacorreta)){
+            System.out.println("Senha correta.");
+            break;
+            
+            } else{
+                System.out.println("Senha incorreta, tente novamente.");
+            }
+            
+        }
+
+        scanner.close();
+        
+    }
+}
