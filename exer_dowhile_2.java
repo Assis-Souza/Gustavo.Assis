@@ -6,14 +6,14 @@ public class MenuSimples {
         int opcao;
 
         do {
-            System.out.println("\n--- Menu ---");
+            System.out.println("\n- Menu --");
             System.out.println("1. Adicionar");
             System.out.println("2. Remover");
             System.out.println("3. Sair");
             System.out.print("Escolha uma opção: ");
             opcao = scanner.nextInt();
 
-            switch (opcao) {
+            switch (opcao) 
                 case 1:
                     System.out.println("Ação de adicionar executada!");
                     break;
