@@ -7,7 +7,7 @@ public class exer_whileALexMontanha_2{
         int contador= 0; 
 
         while  (true){
-            System.out.println("Digite números positivos, irei somando todos. Caso queira encerrar, me envie um número negativo. \ncontagem: " + (contador +1));
+            System.out.printimlnn("Digite números positivos, irei somando todos. Caso queira encerrar, me envie um número negativo. \ncontagem: " + (contador +1));
             numero = scanner.nextInt(); 
 
             if (numero < 0){ 
@@ -15,7 +15,7 @@ public class exer_whileALexMontanha_2{
             }
             
             soma += numero; 
-            contador ++;
+            contador +
         }
 
  System.out.println("Total acumulado dos números positivos: " + soma + "\nVocê passou " + contador + " números positivos.");
