@@ -1,4 +1,3 @@
-package exercicios_dowhile; 
 import  java.util.Scanner;
 public class exer_dowhile_1{
     public static void main(String[] args) {
