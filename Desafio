@@ -1,0 +1,39 @@
+public class CalculadoraRendimento {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        String continuar;
+
+        do {
+            System.out.print("Digite o valor do investimento inicial (P): ");
+            double investimento = scanner.nextDouble();
+
+            System.out.print("Digite a taxa de juros anual (r) em %: ");
+            double taxaJuros = scanner.nextDouble();
+
+            System.out.print("Digite o período de investimento em anos (t): ");
+            int anos = scanner.nextInt();
+
+            System.out.print("Escolha a capitalização (simples/composta): ");
+            String tipoCapitalizacao = scanner.next();
+
+            if (tipoCapitalizacao.equalsIgnoreCase("simples")) {
+                // Fórmula de capitalização simples
+                montante = investimento * (1 + (taxaJuros / 100) * anos);
+            } else if (tipoCapitalizacao.equalsIgnoreCase("composta")) {
+                // Fórmula de capitalização composta
+                montante = investimento * Math.pow((1 + (taxaJuros / 100)), anos);
+            } else {
+                System.out.println("Tipo de capitalização inválido. Use 'simples' ou 'composta'.");
+                continue; // Volta ao início do loop
+            }
+
+            System.out.printf("O montante ao final do período será de: R$ ", montante);
+
+            System.out.print("Deseja realizar um novo cálculo? (s/n): ");
+            continuar = scanner.next();
+        } while (continuar.equalsIgnoreCase("s"));
+
+        System.out.println("Programa encerrado.");
+        scanner.close();
+    }
+}
